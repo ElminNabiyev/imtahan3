@@ -1,0 +1,188 @@
+.hero{
+    height: 1000px;
+    background: #ffffff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #EF629F, #fdfdfd);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #EF629F, #f60198); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.hero_img{
+    align-self: end ;
+    img{
+        width: 100%;
+    }
+}
+.writes{
+    button{
+        color: black;
+        background-color: white;
+        border: none;
+        border-radius: 1rem;
+        padding: 10px 30px;
+        font-weight: 600;
+        font-size: 14px;
+        cursor: pointer;
+    }
+span{
+    font-size: 18px;
+    span{
+        font-size: 48px;
+    }
+}
+h1{
+    font-size: 72px;
+}
+}
+.shop_writes{
+text-align: center;
+margin : 60px 0px;
+p{
+    color: gray;
+    font-size: 14px;
+}
+}
+.boxes{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    gap: 20px;
+}
+.third_img{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.all_products{
+    background-image: url("https://preview.colorlib.com/theme/shop/img/men-bg.jpg.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 70px 0px;
+    margin-top: 70px;
+    position: relative;
+    z-index: 1;
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(45deg, #f6463d 0%, #f6398d 45%, #f52cdc 100%);
+    opacity: 0.7;
+    z-index: 2;
+}
+.title{
+    position: relative;
+    z-index: 5;
+}
+.products{
+    position: relative;
+    width: 60%;
+    margin: auto;
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: 25% 25% 25% 25%;
+    background-color: linear-gradient(45deg, #f6463d 0%, #f6398d 45%, #f52cdc 100%);
+    z-index: 10;
+}
+.product_photo{
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+.grid1fr{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+.title{
+    text-align: center;
+padding-bottom: 50px ;
+ color: white;
+}
+h4{
+    font-size: 38px;
+}
+h5{
+    font-size: 15px;
+}
+.card{
+    color: white;
+}
+.fetch_products{
+    padding: 70px 0px;
+}
+.all{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 60%;
+    margin: auto;
+}
+.product{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.blacklaceheels{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+.btns{
+    display: flex;
+    justify-content: space-between;
+    button{
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 5px;
+        background-color: red;
+        border: 2px solid black;
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width: 1600px) {
+.blacklaceheels{
+    grid-template-columns: 50% 50%;
+}
+
+@media only screen and (max-width: 990px) {
+    .blacklaceheels{
+        grid-template-columns:100%;
+}
+}
+@media only screen and (max-width: 1300px) {
+.boxes{
+    flex-direction: column;
+}
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.third_img{
+    display: flex;
+    flex-direction: column;
+}
+}
+@media only screen and (max-width: 990px) {
+    .hero_img{
+        img{
+            width: 70%;
+        }
+    }
+    .hero{
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    .writes{
+        h1{
+            font-size: 42px;
+        }
+    }
+    .imgs{
+        display: flex;
+        flex-direction: column;
+    }
+   }
+}

@@ -1,0 +1,42 @@
+header{
+    padding: 15px 0px;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    top: 0;
+}
+.container{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    ul{
+        display: flex;
+        gap: 30px;
+        li{
+            a{
+                color: black;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+.menu{
+    padding: 5px 10px;
+    background-color: transparent;
+    border: 1px solid gray;
+    color: gray;
+    border-radius: 0.3rem;
+    display: none;
+}
+@media only screen and (max-width: 990px) {
+   .container{
+       ul{
+           display: none;
+       }
+   }
+   .menu{
+       display: inline;
+   }
+  }
